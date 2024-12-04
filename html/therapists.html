@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="COMP 2800 - MyMind" />
+
+    <title>MyMind - Therapists</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/bgimg2.png" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/410249dbdb.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/therapists.css" />
+    <link rel="stylesheet" type="text/css" href="../css/responsive.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="navPlaceHolder"></div>
+        <header id="headMobile">
+            <nav class="nav-container">
+                <p id="footerNav">MyMind 2024</p>
+
+                <div class="nav-menu" id="nav-menu">
+                    <div id="logoMob">
+                        <a href="/">
+                            <img src="../images/bgimg1" alt="Logo">
+                            <h2>MyMind</h2>
+                        </a>
+                    </div>
+
+                    <i class="bi bi-x nav-close" id="nav-close"></i>
+
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">
+                                <i class="bi bi-house-door nav-icon"></i>Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/therapists" class="nav-link">
+                                <i class="fa-solid fa-heart-pulse nav-icon"></i>Therapists
+                            </a>
+                        </li>
+                        <li class="nav-item isPatient">
+                            <a href="/checkout" class="nav-link">
+                                <i class="bi bi-bag-check nav-icon"></i>Checkout
+                            </a>
+                        </li>
+                        <li class="nav-item isPatient">
+                            <a href="/order-history" class="nav-link">
+                                <i class="bi bi-clock-history nav-icon"></i>Order History
+                            </a>
+                        </li>
+                        <li class="nav-item isAdmin">
+                            <a href="/admin-dashboard" class="nav-link">
+                                <i class="fa-solid fa-users-gear nav-icon"></i>Admin Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item hasActiveSession">
+                            <a href="/chat-session" class="nav-link">
+                                <i class="bi bi-chat-left-dots nav-icon"></i>Chat Session
+                            </a>
+                        </li>
+                        <li class="nav-item isTherapist">
+                            <a href="/my-patients" class="nav-link">
+                                <i class="bi bi-people nav-icon"></i>My Patients
+                            </a>
+                        </li>
+                        <li class="nav-item isLoggedIn">
+                            <a href="/userprofile" class="nav-link">
+                                <i class="bi bi-person-circle nav-icon"></i>Account
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/#contactSec" class="nav-link">
+                                <i class="bi bi-info-circle nav-icon"></i>Contact
+                            </a>
+                        </li>
+                        <li class="nav-item isLoggedOut">
+                            <a href="/login" class="nav-link">
+                                <i class="bi bi-box-arrow-in-right nav-icon"></i>Login
+                            </a>
+                        </li>
+                        <li class="nav-item isLoggedIn">
+                            <a href="#" class="nav-link logout-link">
+                                <i class="bi bi-box-arrow-left nav-icon"></i>Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-btns">
+                    <div class="nav-toggle" id="nav-toggle">
+                        <i class="bi bi-grid"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div id="bannerTherapist">
+            <div id="overlay">
+                <div id="therapistHeader">
+                    <h2>Therapy Sessions</h2>
+                </div>
+            </div>
+        </div>
+
+        <div id="therapistListSec">
+            <h2>Available Therapists</h2>
+            <h4>Choose a therapy session to get started!</h4>
+            <div id="therapistList">
+                <div class="therapistCard" id="1">
+                    <img src="https://kdahweb-static.kokilabenhospital.com/kdah-2019/product/1661259553.jpg" alt="Therapist 1">
+                    <div class="cardContent">
+                        <h3>Dr. Parth Nagda</h3>
+                        <p>Neurologist </p>
+                        <p>   21years of experience<p>₹ 5000 Consultation Fees</p>
+                    </p>
+                        <div>
+                            <button class="therapistBtn" id="627962770fa3e1828c771755">Purchase Session</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="therapistCard" id="2">
+                    <img src="https://i.ytimg.com/vi/7fAsdsIjHok/maxresdefault.jpg" alt="Therapist 1">
+                    <div class="cardContent">
+                        <h3>Dr. Santosh Bangar</h3>
+                        <p>Psychiatrist,Neuropsychiatrist</p>
+                         <p>   22 years of experience<p>₹ 4500 Consultation Fees</p>
+                        </p>
+                        <div>
+                            <button class="therapistBtn" id="627962770fa3e1828c771755"> <a style="text-decoration: none; color: aliceblue;" href="https://www.clinicspots.com/doctor/dr-santosh-bangar">Purchase Session</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="therapistCard" id="3">
+                    <img src="https://assets-us-01.kc-usercontent.com/0f1bf390-09c2-00ff-dbea-bab90e37fcfe/7ba47f51-8315-41e5-bbca-10d678d03702/Dr%20Manish%20Jain-updated2022(700%20%C3%97%20700px).jpg" alt="Therapist 1">
+                    <div class="cardContent">
+                        <h3>Dr. Manish Jain</h3>
+                        <p>Psychiatrist</p>
+
+                        <p>21 years of experience</p>
+                            <p> 1500 consultation fees</p>
+                        <div>
+                            <button class="therapistBtn" id="627962770fa3e1828c771755">Purchase Session</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="therapistCard" id="4">
+                    <img src="data:image/jpeg;base64,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" alt="Therapist 1">
+                    <div class="cardContent">
+                        <h3>Dr. Joy Dev Mukherji</h3>
+                        <p>Vice chairman & head neurology</p>
+                        <p>15 years of exprience in the profession , and offers $90 per session</p>
+                        <div>
+                            <button class="therapistBtn" id="627962770fa3e1828c771755">Purchase Session</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="therapistCard" id="5">
+                    <img src="https://MyMindweb.vercel.app/uploads/image.jpg" alt="Therapist 1">
+                    <div class="cardContent">
+                        <h3>Dr. Puneet Agarwal</h3>
+                        <p>PrincipleDirector-stroke and Dementia</p>
+                        <p>15 years of exprience</p>
+                        <div>
+                            <button class="therapistBtn" id="627962770fa3e1828c771755">Purchase Session</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="therapistCard" id="6">
+                    <img src="https://MyMindweb.vercel.app/uploads/image.jpg" alt="Therapist 1">
+                    <div class="cardContent">
+                        <h3>Atul Prasad</h3>
+                        <p>Neurologist</p>
+                        <p>15 years of exprience</p>
+                        <div>
+                            <button class="therapistBtn" id="627962770fa3e1828c771755">Purchase Session</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="therapistCard" id="7">
+                    <img src="https://MyMindweb.vercel.app/uploads/image.jpg" alt="Therapist 1">
+                    <div class="cardContent">
+                        <h3>Joaquin Phoenix</h3>
+                        <p>15 years of exprience in the profession , and offers $90 per session</p>
+                        <div>
+                            <button class="therapistBtn" id="627962770fa3e1828c771755">Purchase Session</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="therapistCard" id="8">
+                    <img src="https://MyMindweb.vercel.app/uploads/image.jpg" alt="Therapist 1">
+                    <div class="cardContent">
+                        <h3>Joaquin Phoenix</h3>
+                        <p>15 years of exprience in the profession , and offers $90 per session</p>
+                        <div>
+                            <button class="therapistBtn" id="627962770fa3e1828c771755">Purchase Session</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="therapistCard" id="9">
+                    <img src="https://MyMindweb.vercel.app/uploads/image.jpg" alt="Therapist 1">
+                    <div class="cardContent">
+                        <h3>Joaquin Phoenix</h3>
+                        <p>15 years of exprience in the profession , and offers $90 per session</p>
+                        <div>
+                            <button class="therapistBtn" id="627962770fa3e1828c771755">Purchase Session</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="therapistCard" id="10">
+                    <img src="https://MyMindweb.vercel.app/uploads/image.jpg" alt="Therapist 1">
+                    <div class="cardContent">
+                        <h3>Joaquin Phoenix</h3>
+                        <p>15 years of exprience in the profession , and offers $90 per session</p>
+                        <div>
+                            <button class="therapistBtn" id="627962770fa3e1828c771755">Purchase Session</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="therapistCard" id="11">
+                    <img src="https://MyMindweb.vercel.app/uploads/image.jpg" alt="Therapist 1">
+                    <div class="cardContent">
+                        <h3>Joaquin Phoenix</h3>
+                        <p>15 years of exprience in the profession , and offers $90 per session</p>
+                        <div>
+                            <button class="therapistBtn" id="627962770fa3e1828c771755">Purchase Session</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="therapistCard" id="12">
+                    <img src="https://MyMindweb.vercel.app/uploads/image.jpg" alt="Therapist 1">
+                    <div class="cardContent">
+                        <h3>Joaquin Phoenix</h3>
+                        <p>15 years of exprience in the profession , and offers $90 per session</p>
+                        <div>
+                            <button class="therapistBtn" id="627962770fa3e1828c771755">Purchase Session</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Cart Exist Modal -->
+        <div id="cartExistModal">
+            <div id="modalContent">
+                <i class="fa-solid fa-xmark" id="closeCart"></i>
+                <div id="alertIcon">
+                    <i class="bi bi-bag-check-fill"></i>
+                </div>
+                <h2>Cart is full!</h2>
+                <p>You already have a therapist added to your cart, empty your cart at <a href="/checkout">Checkout</a>
+                    to proceed.</p>
+            </div>
+        </div>
+
+        <!-- Active Therapy Session Exist Modal -->
+        <div id="therapySessionExistModal">
+            <div id="modalContent">
+                <i class="fa-solid fa-xmark" id="closeSession"></i>
+                <div id="alertIcon">
+                    <i class="bi bi-exclamation-triangle-fill"></i>
+                </div>
+                <h2>Hold on there!</h2>
+                <p>You currently have an active session with your therapist, <span id="therapistName"></span>
+                    Your session expires on <span id="expireDate"></span> at <span id="expireTime"></span></p>
+            </div>
+        </div>
+
+        <!-- Not Authorized to Purchase Modal -->
+        <div id="notAuthorizedModal">
+            <div id="modalContent">
+                <div id="authorizedModalMessage">
+                    <h2>Not authorized to purchase!</h2>
+                    <p>To purchase a therapist, please <a href="/login">Login</a> or <a href="/sign-up">Sign Up</a> as a
+                        patient.</p>
+                </div>
+                <i class="fa-solid fa-xmark" id="closeAuthorized"></i>
+            </div>
+        </div>
+
+        <!-- Chat Expired Modal -->
+        <div id="chatExpiredModal">
+            <div id="modalContent">
+                <div id="chatExpiredModalMessage">
+                    <h2>Your session has expired!</h2>
+                    <p>Purchase a new session at <a href="/therapists">Therapists</a> to continue your journey.</p>
+                </div>
+                <i class="fa-solid fa-xmark" id="closeChatExpired"></i>
+            </div>
+        </div>
+
+        <div id="therapistChat"></div>
+        <div id="footerPlaceHolder"></div>
+    </div>
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/therapists.js"></script>
+</body>
+
+</html>
